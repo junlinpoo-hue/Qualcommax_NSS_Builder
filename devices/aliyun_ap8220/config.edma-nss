@@ -4,9 +4,9 @@
 # NSS Memory Profile (AP8220 1GB 内存使用 MEDIUM)
 CONFIG_NSS_MEM_PROFILE_MEDIUM=y
 
-# ath11k NSS WiFi Offload Support
-CONFIG_ATH11K_NSS_SUPPORT=y
-CONFIG_PACKAGE_MAC80211_NSS_SUPPORT=y
+# Disable WiFi offload (无 WiFi 不需要)
+# CONFIG_ATH11K_NSS_SUPPORT is not set
+# CONFIG_PACKAGE_MAC80211_NSS_SUPPORT is not set
 
 # NSS Core Driver
 CONFIG_PACKAGE_kmod-qca-nss-drv=y
