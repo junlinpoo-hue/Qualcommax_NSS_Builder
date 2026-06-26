@@ -1,1 +1,31 @@
+## EDMA-NSS Variant Configuration
+## NSS Hardware Acceleration Packages
 
+# NSS Memory Profile (AP8220 1GB 内存使用 MEDIUM)
+CONFIG_NSS_MEM_PROFILE_MEDIUM=y
+
+# ath11k NSS WiFi Offload Support
+CONFIG_ATH11K_NSS_SUPPORT=y
+CONFIG_PACKAGE_MAC80211_NSS_SUPPORT=y
+
+# NSS Core Driver
+CONFIG_PACKAGE_kmod-qca-nss-drv=y
+CONFIG_PACKAGE_kmod-qca-ppe-nss=y
+
+# NSS ECM (Enhanced Connection Manager) - NAT/PPPoE Offload
+CONFIG_PACKAGE_kmod-qca-nss-ecm=y
+
+# NSS Clients
+CONFIG_PACKAGE_kmod-qca-nss-drv-pppoe=y
+CONFIG_PACKAGE_kmod-qca-nss-drv-qdisc=y
+CONFIG_PACKAGE_kmod-qca-nss-drv-igs=y
+
+# NSS SQM Scripts
+CONFIG_PACKAGE_sqm-scripts-nss=y
+CONFIG_PACKAGE_luci-app-sqm=y
+
+# NSS Firmware
+CONFIG_PACKAGE_kmod-qca-nss-drv-profile=y
+
+# Additional NSS utilities
+CONFIG_PACKAGE_luci-mod-status-nss=y
